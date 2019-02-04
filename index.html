@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<script src="scripts/Funciones.js"></script>
+		<title>Calculadora</title>
+		
+	</head>
+	<body>
+		<form name="Calculadora">
+			<input type="textfield" name="Vista" value="" width="240" height="240">
+			
+		<input type="text" name="Dato1">
+		<br>
+		
+		<section id="NUMEROS">
+		<article>
+		<img src="Numeros/1.png" value="1" alt="UNO" width="30" height="30" onClick="concatenar(1)">
+		<img src="Numeros/2.png" value="2" alt="DOS" width="30" height="30" onClick="concatenar(2)">
+		<img src="Numeros/3.png" value="3"  alt="TRES" width="30" height="30" onClick="concatenar(3)">
+		<img src="Numeros/+.png" value="+" alt="SUMAR" width="30" height="30" onClick="CapturarOperacion('+')">
+		</article>
+		
+		<article>
+		<img src="Numeros/4.png" value="4" alt="CUATRO" width="30" height="30" onClick="concatenar(4)">
+		<img src="Numeros/5.png" value="5" alt="CINCO" width="30" height="30" onClick="concatenar(5)">
+		<img src="Numeros/6.png" value="6" alt="SEIS" width="30" height="30" onClick="concatenar(6)">
+		<img src="Numeros/-.png" value="-" alt="RESTAR" width="30" height="30" onClick="CapturarOperacion('-')">
+		
+		</article>
+		<article>
+		<img src="Numeros/7.png" value="7" alt="SIETE" width="30" height="30" onClick="concatenar(7)"> 
+		<img src="Numeros/8.png" value="8" alt="OCHO" width="30" height="30" onClick="concatenar(8)">
+		<img src="Numeros/9.png" value="9" alt="NUEVE" width="30" height="30" onClick="concatenar(9)">
+		<img src="Numeros/x.png" value="*" alt="MULTIPLICAR" width="30" height="30" onClick="CapturarOperacion('*')">
+		</article>
+		</section>
+		<img src="Numeros/=.png" value="c" width="30" height="30" alt="borrar" onClick="Borrar()">
+		<img src="Numeros/0.png" value="0" alt="CERO" width="30" height="30" onClick="concatenar(0)">
+		<img src="Numeros/==.png" value="=" alt="IGUAL" width="40" height="30" onClick="Operar()">
+		<img src="Numeros/D.png" value="/" alt="DIVIDIR" width="30" height="30" onClick="CapturarOperacion('/')">     
+		</form>
+	</body>
+</html>
